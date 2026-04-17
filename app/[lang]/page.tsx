@@ -134,12 +134,12 @@ background: scrolled
 
     {/* LOGO */}
     <div className="leading-tight">
-      <h1 
-        className="heading font-bold text-lg tracking-widest"
-        style={{ color: theme.text }}
-      >
-        {siteData.genel.isim}
-      </h1>
+    <div 
+  className="heading font-bold text-lg tracking-widest"
+  style={{ color: theme.text }}
+>
+  {siteData.genel.isim}
+</div>
 
       <p 
         className="text-xs tracking-[0.25em]"
