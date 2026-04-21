@@ -147,12 +147,18 @@ export const siteData = {
 
     erkek: [],
     kadin: [
-      "/gorsel1.jpg",
-      "/gorsel2.jpg",
-      "/gorsel3.jpg",
-      "/gorsel4.jpg",
-      "/gorsel5.jpg",
-      "/gorsel6.jpg"
+     "/gorsel1.jpg",
+    "/gorsel2.jpg",
+    "/gorsel3.jpg",
+    "/gorsel4.jpg",
+    "/gorsel5.jpg",
+    "/gorsel6.jpg",
+    "/gorsel7.jpg",
+    "/gorsel8.jpg",
+    "/gorsel9.jpg",
+    "/gorsel10.jpg",
+    "/gorsel11.jpg",
+    "/gorsel12.jpg"
     ]
   },
 
