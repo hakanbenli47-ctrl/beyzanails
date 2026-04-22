@@ -14,45 +14,44 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Nail Studio | Profesyonel Tırnak Tasarımı",
-    template: "%s | Nail Studio",
+    default: "Beyza Nails Nail Studio",
+    template: "%s | Beyza Nails",
   },
 
   description:
-    "Profesyonel nail art, kalıcı oje, protez tırnak ve bakım hizmetleri. Hemen randevu al, güzelliğini tamamla.",
+    "Beyza Nails nail studio. Protez tırnak, kalıcı oje ve nail art hizmetleri. Profesyonel ve hijyenik uygulamalarla bakımlı tırnaklara sahip olun.",
 
   keywords: [
-    "nail salon",
-    "tırnak tasarımı",
+    "beyza nails",
+    "nail studio",
     "protez tırnak",
     "kalıcı oje",
+    "nail art",
+    "tırnak tasarımı",
     "manikür",
     "pedikür",
-    "nail art",
-    "tırnak salonu İstanbul",
-    "yakınımda nail salon",
     "tırnak bakımı",
   ],
 
-  authors: [{ name: "Nail Studio" }],
-  creator: "Nail Studio",
+  authors: [{ name: "Beyza Nails" }],
+  creator: "Beyza Nails",
 
   verification: {
     google: "zyKEFn3r_X7lkwwRl073cA0Nq-FBI7F_wtSSlNc9Ag8",
   },
 
   openGraph: {
-    title: "Nail Studio | Tırnak Tasarımı",
+    title: "Beyza Nails Nail Studio",
     description:
-      "Kalıcı oje, protez tırnak ve nail art hizmetleriyle fark yarat.",
-    url: "https://www.beyzanails.com.tr", // BURAYI KENDİ DOMAINİNLE DEĞİŞTİR
-    siteName: "Nail Studio",
+      "Protez tırnak, kalıcı oje ve nail art hizmetleri. Beyza Nails ile profesyonel bakım deneyimi.",
+    url: "https://www.beyzanails.com.tr",
+    siteName: "Beyza Nails",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Nail Studio",
+        alt: "Beyza Nails",
       },
     ],
     locale: "tr_TR",
@@ -61,8 +60,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Nail Studio",
-    description: "Profesyonel tırnak tasarımı ve bakım hizmetleri",
+    title: "Beyza Nails Nail Studio",
+    description:
+      "Profesyonel protez tırnak, kalıcı oje ve nail art hizmetleri.",
     images: ["/og-image.jpg"],
   },
 
@@ -74,9 +74,9 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html
       lang="tr"
