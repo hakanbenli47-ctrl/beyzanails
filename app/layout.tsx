@@ -13,6 +13,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  // 🔥 KRİTİK (canonical sistemi)
+  metadataBase: new URL("https://www.beyzanails.com.tr"),
+
+  alternates: {
+    canonical: "/",
+  },
+
   title: {
     default: "Beyza Nails Nail Studio",
     template: "%s | Beyza Nails",
@@ -44,7 +51,7 @@ export const metadata: Metadata = {
     title: "Beyza Nails Nail Studio",
     description:
       "Protez tırnak, kalıcı oje ve nail art hizmetleri. Beyza Nails ile profesyonel bakım deneyimi.",
-    url: "https://www.beyzanails.com.tr",
+    url: "https://www.beyzanails.com.tr/",
     siteName: "Beyza Nails",
     images: [
       {
