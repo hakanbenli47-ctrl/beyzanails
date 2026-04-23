@@ -1,9 +1,0 @@
-{
-  "redirects": [
-    {
-      "source": "https://beyzanails.com.tr/(.*)",
-      "destination": "https://www.beyzanails.com.tr/$1",
-      "permanent": true
-    }
-  ]
-}
