@@ -644,7 +644,9 @@ className="text-sm md:text-base tracking-[0.35em] uppercase font-semibold mb-3 f
     </div>
 
   </div>
-</section><section className="relative py-24 md:py-32 px-4 md:px-6 reveal overflow-hidden">
+</section>
+
+<section className="relative py-24 md:py-32 px-4 md:px-6 reveal overflow-hidden">
 
   {/* ARKA PLAN */}
   <div className="absolute inset-0 pointer-events-none">
@@ -662,7 +664,7 @@ className="text-sm md:text-base tracking-[0.35em] uppercase font-semibold mb-3 f
     >
       <div className="relative rounded-3xl overflow-hidden shadow-2xl">
         <img
-          src="/person1.jpg"
+          src={siteData.about.gorsel}
           className="w-full h-[420px] object-cover"
         />
 
@@ -689,7 +691,7 @@ className="text-sm md:text-base tracking-[0.35em] uppercase font-semibold mb-3 f
         style={{ color: theme.primary }}
         className="text-2xl md:text-4xl font-bold mb-4"
       >
-Beyza Nails 
+        {siteData.genel.isim}
       </h2>
 
       {/* ALT BAŞLIK */}
@@ -697,41 +699,29 @@ Beyza Nails
         style={{ color: theme.text }}
         className="text-sm md:text-base font-semibold mb-4"
       >
-        Güzellik Uzmanı • Kurucu
+        {siteData.genel.altBaslik}
       </p>
 
       {/* AÇIKLAMA */}
       <p
         style={{ color: theme.text + "cc" }}
-        className="text-sm md:text-base leading-relaxed mb-5"
-      >
-      Ben Beyzanur Özen.
-Tırnak bakımı ve nail uygulamaları alanında uzmanlaşarak, her danışanıma özel ve özenli hizmet sunuyorum.
-
-Hijyen, detay ve estetiği ön planda tutarak; kalıcı, sağlıklı ve şık tırnaklar oluşturmayı hedefliyorum.
-
-Amacım yalnızca güzel görünen tırnaklar değil, aynı zamanda kendinizi daha bakımlı ve özgüvenli hissetmenizi sağlamak.
-      </p>
-
-      <p
-        style={{ color: theme.text + "cc" }}
         className="text-sm md:text-base leading-relaxed mb-6"
       >
-        Hijyen, kalite ve memnuniyet benim için en önemli üç unsur. 
-        En yeni teknikler ve profesyonel ürünlerle çalışarak, 
-        kalıcı ve güvenilir sonuçlar sunuyorum.
+        {siteData.about.aciklama}
       </p>
 
-      {/* MİNİ GÜVEN BLOĞU */}
+      {/* STATS */}
       <div className="flex gap-6 mb-8 text-center">
-        <div>
-          <p style={{ color: theme.primary }} className="font-bold text-lg">2000+</p>
-          <p style={{ color: theme.text + "99" }} className="text-xs">Mutlu Müşteri</p>
-        </div>
-        <div>
-          <p style={{ color: theme.primary }} className="font-bold text-lg">5+ Yıl</p>
-          <p style={{ color: theme.text + "99" }} className="text-xs">Deneyim</p>
-        </div>
+        {siteData.stats.slice(0, 2).map((item, i) => (
+          <div key={i}>
+            <p style={{ color: theme.primary }} className="font-bold text-lg">
+              {item.deger}
+            </p>
+            <p style={{ color: theme.text + "99" }} className="text-xs">
+              {item.label}
+            </p>
+          </div>
+        ))}
       </div>
 
       {/* CTA */}
